@@ -32,4 +32,5 @@ jobs:
           echo test, and deploy your project.
           
       - name: Hit curl
-        run:  curl --location --request GET 'https://api.github.com/repos/octocat/hello-world/hooks'--header 'Accept: application/vnd.github.v3+json'
+        run: |-
+          curl --location --request GET 'https://api.github.com/repos/octocat/hello-world/hooks'--header 'Accept: application/vnd.github.v3+json'
