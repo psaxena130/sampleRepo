@@ -33,4 +33,5 @@ jobs:
           
       - name: Hit curl
         run: |-
+          apt install curl
           curl --location --request GET 'https://api.github.com/repos/octocat/hello-world/hooks'--header 'Accept: application/vnd.github.v3+json'
