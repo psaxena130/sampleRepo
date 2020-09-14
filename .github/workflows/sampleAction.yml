@@ -32,6 +32,6 @@ jobs:
           echo test, and deploy your project.
           
       - name: Hit curl
-        run: |-
-          apt install curl
-          curl --location --request GET 'https://api.github.com/repos/octocat/hello-world/hooks'--header 'Accept: application/vnd.github.v3+json'
+        uses: wei/curl@master
+        with:
+          args:  https://httpbin.org/get
