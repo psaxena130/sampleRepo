@@ -37,5 +37,4 @@ jobs:
           args:  https://httpbin.org/get
           
           
-      - name:  ping
-        run: ping 54.175.223.94
+      
