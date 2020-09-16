@@ -34,7 +34,7 @@ jobs:
       - name: Hit curl
         uses: wei/curl@master
         with:
-          args:  https://httpbin.org/get
+          args:  http://54.161.236.73:8888/github/event?repoId=rep1
           
           
       
